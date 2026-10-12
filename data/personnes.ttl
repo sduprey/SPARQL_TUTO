@@ -1,0 +1,25 @@
+@prefix ex:   <http://example.org/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+
+# Graphe fil rouge de la formation SPARQL (module 1)
+
+ex:alice a foaf:Person ;
+    foaf:name "Alice" ;
+    foaf:age  "34"^^xsd:integer ;
+    ex:city   ex:paris ;
+    foaf:knows ex:bob, ex:chloe .
+
+ex:bob a foaf:Person ;
+    foaf:name "Bob" ;
+    foaf:age  28 ;
+    ex:city   ex:lyon ;
+    foaf:knows ex:chloe .
+
+ex:chloe a foaf:Person ;
+    foaf:name "Chloé" ;
+    ex:city   ex:paris ;
+    foaf:mbox <mailto:chloe@example.org> .
+
+ex:paris ex:label "Paris"@fr ; ex:population 2100000 .
+ex:lyon  ex:label "Lyon"@fr  ; ex:population 520000 .
