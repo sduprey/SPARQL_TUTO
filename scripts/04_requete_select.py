@@ -34,7 +34,8 @@ def vers_dataframe(resultats) -> pd.DataFrame:
 
 
 titre("DataFrame pandas")
-print(vers_dataframe(res))
+my_dataframe = vers_dataframe(res) 
+print(my_dataframe)
 
 titre("Format de résultats SPARQL JSON")
 print(res.serialize(format="json").decode()[:300], "...")
