@@ -1,3 +1,46 @@
+# --- Environnement virtuel (uv) ---
 .venv/
-sorties/
+venv/
+env/
+# uv.lock reste versionné : il fige les versions des dépendances
+
+# --- Python ---
 __pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+.eggs/
+build/
+dist/
+*.egg
+
+# --- Outils / tests ---
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+.coverage.*
+htmlcov/
+.tox/
+.nox/
+
+# --- Jupyter ---
+.ipynb_checkpoints/
+
+# --- Secrets ---
+.env
+.env.*
+
+# --- Sorties générées par les scripts (data/ reste versionné) ---
+sorties/
+
+# --- Éditeurs ---
+.vscode/
+.idea/
+*.swp
+*~
+
+# --- Systèmes d'exploitation ---
+.DS_Store
+Thumbs.db
+desktop.ini

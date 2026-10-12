@@ -5,6 +5,8 @@ from rdflib.namespace import FOAF, XSD
 from commun import EX, titre
 
 alice = EX.alice
+#alice = EX["alice"]                             # bracket form, for names that aren't valid Python identifiers
+#alice = URIRef("http://example.org/alice") 
 titre("URIRef (IRI)")
 print(alice, alice == URIRef("http://example.org/alice"))
 
